@@ -2,6 +2,7 @@ document.getElementById("btn").addEventListener("click", function () {
   const color = document.getElementById("color").value.trim();
   const preview = document.getElementById("preview");
   const details = document.getElementById("details");
+  const palettes = document.getElementById("palettes");
 
   if (!tinycolor(color).isValid()) {
     details.innerHTML = "<p class='text-danger'>Invalid color value.</p>";

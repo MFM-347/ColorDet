@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Color Info: Lets Get Colored</title>
+  <title>ColorDet: Lets Get Colored</title>
   <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
   <link href='/style.css' rel='stylesheet'>
@@ -12,7 +12,7 @@
 
 <body data-bs-theme="dark">
   <div class="container">
-    <h1 class="display-4 my-3 text-center fw-bold">Color Info</h1>
+    <h1 class="display-4 my-3 text-center fw-bold">Color-Det</h1>
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="input-group mb-3">
@@ -24,15 +24,32 @@
           </div>
         </div>
         <div id="preview" class="text-center mb-3"></div>
-        <h2 class="text-center display-5 fw-bold">Details</h2>
-        <div id="details" class="ic"></div>
-        <h2 class="text-center display-5 fw-bold">Combinations</h2>
-        <div id="palettes" class="ic"></div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-pane"
+              type="button" role="tab" aria-controls="details-pane" aria-selected="true">Details</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="combinations-tab" data-bs-toggle="tab" data-bs-target="#combinations-pane"
+              type="button" role="tab" aria-controls="combinations-pane" aria-selected="false">Combinations</button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active ic" id="details-pane" role="tabpanel" aria-labelledby="details-tab">
+            <h2 class="my-3 text-center display-5 fw-bold"><i class="fas fa-circle-info"></i> Color Details</h2>
+            <div id="details"></div>
+          </div>
+          <div class="tab-pane fade ic" id="combinations-pane" role="tabpanel" aria-labelledby="combinations-tab">
+            <h2 class="my-3 text-center display-5 fw-bold"><i class="fas fa-palette"></i> Color Combinations</h2>
+            <div id="palettes"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <script src="https://unpkg.com/tinycolor2"></script>
   <script src="https://unpkg.com/jquery"></script>
+  <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/script.js"></script>
 </body>
 
