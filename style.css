@@ -1,0 +1,52 @@
+:root {
+  --c1-bg: #005ff0;
+  --c1-border: #004EC5;
+  --c1-hover-bg: #002ff0;
+  --c1-hover-border: #002ff0;
+}
+
+.inp {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.btn1 {
+  background-color: var(--c1-bg);
+  border: 1.25px solid var(--c1-border);
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.btn1:hover {
+  background-color: var(--c1-hover-bg);
+  border: 1.25px solid var(--c1-hover-border);
+}
+
+#preview {
+  width: auto;
+  height: 100px;
+  border: 1.25px solid #99a2aa;
+}
+
+#details {
+  font-size: 1.25rem;
+}
+
+.ic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 7.5px 0;
+}
+
+.color-sq {
+  height: 50px;
+  width: 50px;
+  margin: 0 7.5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Info: Lets Get Colored</title>
+  <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+  <link href='/style.css' rel='stylesheet'>
+</head>
+
+<body data-bs-theme="dark">
+  <div class="container">
+    <h1 class="display-4 my-3 text-center fw-bold">Color Info</h1>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="input-group mb-3">
+          <input type="text" id="color" class="form-control inp" placeholder="Enter a Color (Name, HEX, RGB)">
+          <div class="input-group-append">
+            <button class="btn btn1" id="btn" type="button">
+              <i class="fa fa-eye-dropper"></i>
+            </button>
+          </div>
+        </div>
+        <div id="preview" class="text-center mb-3"></div>
+        <h2 class="text-center display-5 fw-bold">Details</h2>
+        <div id="details" class="ic"></div>
+        <h2 class="text-center display-5 fw-bold">Combinations</h2>
+        <div id="palettes" class="ic"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/tinycolor2"></script>
+  <script src="https://unpkg.com/jquery"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
