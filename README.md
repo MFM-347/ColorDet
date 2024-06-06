@@ -12,7 +12,7 @@ Features:
 * Anyone who wants to bring their creative projects to life with color!
 
 Getting Started:
-1. Visit ColorDet at [here](MFM-347.github.io/ColorDet/Index.html).
+1. Visit ColorDet at [here](https://mfm-347.github.io/ColorDet/).
 2. Enter a color or use the color picker tool.
 3. Explore different color schemes generated automatically.
 4. Find the perfect combination to inspire your next project!
